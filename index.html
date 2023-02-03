@@ -1,0 +1,117 @@
+<!doctype html>
+<html>
+    <head>
+        <meta name='viewport' content='width=device-width, initial-scale=1.0'>            
+        <title>Portfolio</title>
+        <link rel='stylesheet' href='./css/style.css'>
+          <script src="https://aframe.io/releases/1.4.0/aframe.js"></script>
+
+    </head>
+    <body>
+            <div class="header row">
+
+                    <div class="col-1"><a href="#introduction"><i class="material-icons">home</i></a></div>
+                    <div class="col-1"><a href="#vizRow"><i class="material-icons">library_books</i></a></div>
+                    <div class="col-1"><a href="#changes"><i class="material-icons">school</i></a></div>
+                    <div class="col-1"><a href="./Sources.html" target="_blank"><i class="material-icons">language</i></a></div>
+                    <!--  <div class="col-2"></div>
+                    <div class="col-2"></div>
+                    <div class="col-2"></div>
+                    <div class="col-2"></div>
+                    <div class="col-2"></div>
+                    <div class="col-2"></div>
+                    <div class="col-2"></div>
+                    <div class="col-3"></div>-->
+            </div>
+        </div>
+        <div class="introduction row">
+            <h1>Jordan Alba Reed</h1>
+            <p>I am a student of Boise State University’s <a href="https://www.boisestate.edu/gimm/" target="blank">GIMM</a> program where I focus on programming of different software applications. This is a gallery designed to showcase some works that capture my capabilities as a software engineer. My goals are to become a competent member of a strong team to help develop a product that fully meets the client's need.</p>
+
+ 
+            <a href="mailto: albareedjordan@gmail.com">Contact Me</a>
+        </div>
+        <hr />
+       <div class="content">
+        <div class="row">
+        <!-- add hidden contentcards (to left or right) that further display info like short synopsis and button to its main page -->
+            <div class="col-6 contentBlock contentCard" >
+                <h1>Spider Animation</h1>
+                <video id="spiderAnim" alt="Animation Project" referrerpolicy="origin" src="http://127.0.0.1/media/spiderAnim.mov">
+                </video>
+            </div>
+            <div class="col-6" >
+                <img src="" alt="Project 2">
+            </div>
+        </div>
+        <hr />
+        <div class="row">
+            <div class="col-6 contentBlock contentCard" >
+                <h1>360&deg; Escape Room Narrative Experience</h1>
+                <img id="incMach" alt="Incredible Machine Cover Photo" src="./media/imSplash.png" />
+            </div>
+            <div class="col-6 contentBlock contentCard" >
+                <a-scene id="vr-scene" embedded>
+                  <a-assets timeout="10000">
+                    <video
+                      id="vid"
+                      crossorigin="anonymous"
+                      autoplay="false"
+                      muted
+                      src="http://127.0.0.1/media/FirstScene.mp4"
+                    ></video>
+                  </a-assets>
+
+                  <a-entity
+                    geometry="primitive: sphere; 
+                                      radius: 5000;
+                                      segmentsWidth: 64;
+                                      segmentsHeight: 64;"
+                    material="shader: flat; src: #vid;"
+                    scale="-1 1 1"
+                  >
+                  </a-entity>
+                </a-scene>            
+            </div>
+        </div>
+        <hr />
+        <div class="row">
+            
+            <div class="col-6" >
+                <img src="" alt="Project 2">
+            </div>
+        </div>
+        <hr />
+        <div class="row">
+            <div class="col-6" >
+                <img src="./media/MattHarvey.png" alt="Project 1">
+            </div>
+            <div class="col-6">
+                <img src="" alt="Project 2">
+            </div>
+        </div>
+        <div class="finalSpacer"></div>
+       </div>
+        
+                <div class="footer row">
+                    <div class="col-1"><a href="#heroShotHome"><i class="material-icons">arrow_upward</i></a></div>
+                    <div class="col-1"><a href="#introduction"><i class="material-icons">home</i></a></div>
+                    <div class="col-1"><a href="#vizRow"><i class="material-icons">library_books</i></a></div>
+                    <div class="col-1"><a href="#changes"><i class="material-icons">school</i></a></div>
+                    <div class="col-1"><a href="./Sources.html" target="_blank"><i class="material-icons">language</i></a></div>
+                    <!--  <div class="col-2"></div>
+                    <div class="col-2"></div>
+                    <div class="col-2"></div>
+                    <div class="col-2"></div>
+                    <div class="col-2"></div>
+                    <div class="col-2"></div>
+                    <div class="col-2"></div>
+                    <div class="col-3"></div>-->
+                </div>
+        
+
+        <script src="./autoplay.js"></script>
+        <script src="./header.js"></script>
+    </body>
+
+</html>
