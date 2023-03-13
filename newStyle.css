@@ -1,0 +1,188 @@
+
+body{
+    background-color: #000;
+    color: #fff;
+    margin: 0 5%;
+}
+a{
+    color: #4682B4;
+}
+
+.row{
+    padding: 10px 0 0 0;
+}
+iframe{
+    height: 768px;
+    width: 100%;
+}
+.material-symbols-outlined, .fa-brands{
+    font-size: inherit;
+    pointer-events: none;
+}
+.owl-nav span{
+    font-size: 30px;
+}
+.body-overlay{
+    opacity: .2;
+    filter: hue-rotate(170deg);
+    position: fixed;
+    left: 0;
+    top: 0;
+    object-fit: cover;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+}
+section{
+    padding: 7.5% 0 10% 0;
+}
+.section-title{
+    border-radius:20px;
+    border: 1px solid #fff;
+    padding: 10px;
+    width: fit-content;
+    font-size: 16px;
+    margin-bottom: 5%;
+} .section-title:hover{
+    border-color: #4682B4;
+}
+span{
+    color: #4682B4;
+    font-size: .8em;
+    font-weight: 800;
+}
+.skill-card{
+    text-align: center;
+    border-radius: 25px;
+    border: 1px solid #fff;
+    padding: 10px;
+} .skill-card:hover{
+    border-color: #4682B4;
+}
+.skill-card img{
+    max-height: 100px;
+    width: auto;
+}
+#artifacts img, #artifacts iframe{
+    border-radius: 25px;
+}
+@media only screen and (min-width: 992px) {
+    body{
+        margin: 0;
+    }
+    .contact-card{
+        width: 25%;
+        bottom: 33%;
+        left: 2%;        
+        position: fixed;
+
+    }
+    
+}
+.contact-card{
+    max-width: 488px;
+    border: 1px solid #fff;
+    border-radius: 25px;        
+    padding: 15px;   
+    margin: auto;           
+    text-align: center;
+  
+
+
+
+}.contact-card:hover{
+    border-color: #4682B4;
+}
+.contact-card img{
+    max-height: 500px;
+    border-radius: 20px;
+}
+.contact-card i{
+    font-size: 25px;
+}
+.specialization-card{
+    border-radius: 25px;
+    border: 1px solid #fff;
+    padding: 2%;
+    margin-bottom: 10px;
+} .specialization-card:hover{
+    border-color: #4682B4;
+}
+.specialization-card .col-lg-3{
+    text-align: center;
+}
+
+@media (max-width: 991px) {
+    .carousel-inner .carousel-item > div {
+        display: none;
+    }
+    .carousel-inner .carousel-item > div:first-child {
+        display: block;
+    }
+}
+
+.carousel-inner .carousel-item.active,
+.carousel-inner .carousel-item-next,
+.carousel-inner .carousel-item-prev {
+    display: flex;
+    transition: .1;
+
+}
+
+/* medium and up screens */
+@media (min-width: 992px) {
+    
+    .carousel-inner .carousel-item-end.active,
+    .carousel-inner .carousel-item-next {
+      transform: translateX(25%);
+    }
+    
+    .carousel-inner .carousel-item-start.active, 
+    .carousel-inner .carousel-item-prev {
+      transform: translateX(-25%);
+    }
+}
+
+.carousel-inner .carousel-item-end,
+.carousel-inner .carousel-item-start { 
+  transform: translateX(0);
+}
+
+.menu{
+    flex-direction: column;
+    border: 1px solid #575757;
+    border-radius: 30px;
+    position: fixed;
+    right: 68px;
+    top: 33%;
+    text-align: center;
+    padding: 24px 5px;
+    z-index: 20;
+}
+.menu a{
+    color: #999;
+    font-size: 25px;
+}
+ul.menu{
+    list-style: none;
+    margin: 0;
+}
+.menu li{
+    display: list-item;
+    padding-top: 15px;
+}
+.menu li a span{
+    position: absolute;
+    transition: .3s;
+    background: #404042;
+    right: 100%;
+    color: #fff;
+    display: block;
+    padding: 1px 8px;
+    border-radius: 5px;
+    visibility: hidden;
+    opacity: 100%;
+}
+.menu li a.active, .menu li a:hover{
+    color: #4682B4;
+}
