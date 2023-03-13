@@ -34,7 +34,7 @@ iframe{
     z-index: -1;
 }
 section{
-    padding: 7.5% 0 10% 0;
+    padding: 0 0 20% 0;
 }
 .section-title{
     border-radius:20px;
@@ -66,27 +66,15 @@ span{
 #artifacts img, #artifacts iframe{
     border-radius: 25px;
 }
-@media only screen and (min-width: 992px) {
-    body{
-        margin: 0;
-    }
-    .contact-card{
-        width: 25%;
-        bottom: 33%;
-        left: 2%;        
-        position: fixed;
 
-    }
-    
-}
 .contact-card{
     max-width: 488px;
     border: 1px solid #fff;
     border-radius: 25px;        
-    padding: 15px;   
-    margin: auto;           
+    margin: auto;   
+    margin-top: 5%;        
     text-align: center;
-  
+    padding: 0 10px;
 
 
 
@@ -99,6 +87,21 @@ span{
 }
 .contact-card i{
     font-size: 25px;
+}.contact-card>div{
+    padding: 10px 0;
+}
+@media only screen and (min-width: 992px) {
+    body{
+        margin: 10% 0 0 0;
+    }
+    .contact-card{
+        width: 25%;
+        top: 20%;
+        left: 2%;        
+        position: fixed;
+        margin-top: 0;
+    }
+    
 }
 .specialization-card{
     border-radius: 25px;
@@ -153,7 +156,7 @@ span{
     border: 1px solid #575757;
     border-radius: 30px;
     position: fixed;
-    right: 68px;
+    right: 5px;
     top: 33%;
     text-align: center;
     padding: 24px 5px;
@@ -185,4 +188,9 @@ ul.menu{
 }
 .menu li a.active, .menu li a:hover{
     color: #4682B4;
+}
+@media (min-width:992px){
+    .menu{    
+        right: 68px;        
+    }
 }

@@ -5,12 +5,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Jordan Alba Reed's Portfolio</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
-    <link rel="stylesheet" href="owl.carousel.css">
-    <link rel="stylesheet" href="owl.theme.default.min.css">
+    <link rel="stylesheet" href="owl/owl.carousel.css">
+    <link rel="stylesheet" href="owl/owl.theme.default.min.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined">
     <script src="https://kit.fontawesome.com/84501ef9f1.js" crossorigin="anonymous"></script>
     
-    <link rel="stylesheet" href="newStyle.css">
+    <link rel="stylesheet" href="style.css">
 </head>
   <body>
     <video class="body-overlay" autoplay loop muted src="media/main-background.mp4"></video>
@@ -64,7 +64,7 @@
         <div class="row">
         <div class="col-lg-4">&nbsp;</div>
         <div class="col-lg-7">
-            <section id="home">
+            <section id="home" >
                 <div class="row">
                     <div class="col-lg-12">
                     <h4 class="section-title"> <i class="material-symbols-outlined">home</i> Introduction</h4>
@@ -84,7 +84,7 @@
                     </div>
                 </div>
             </section>
-            <section id="resume">
+            <section id="resume" >
                 <div class="row">
                     <div class="col-lg-12">
                     <h4 class="section-title"> <i class="material-symbols-outlined">contact_mail</i> Resume</h4>
@@ -106,7 +106,7 @@
                     </div>
                 </div>
             </section>
-            <section id="services">
+            <section id="services" >
                 <div class="row">
                     <div class="col-lg-12">
                     <h4 class="section-title"><i class="material-symbols-outlined">list_alt</i> Services</h4>
@@ -171,7 +171,7 @@
                     </div>
                 </div>
             </section> 
-            <section id="skills">
+            <section id="skills" >
                 <div class="row">
                     <div class="col-lg-12">
                     <h4 class="section-title"><i class="material-symbols-outlined">checklist</i> Skills</h4>
@@ -235,7 +235,7 @@
                   </div>
 
             </section>
-            <section id="artifacts">
+            <section id="artifacts" >
                 <div class="row">
                     <div class="col-lg-12">
                     <h4 class="section-title"><i class="material-symbols-outlined">dashboard</i> Artifacts</h4>
@@ -265,32 +265,32 @@
     </div>
     </main>
     <script src="https://code.jquery.com/jquery-3.6.4.js" integrity="sha256-a9jBBRygX1Bh5lt8GZjXDzyOB+bWve9EiO7tROUtj/E=" crossorigin="anonymous"></script>
-        <script src="owl.carousel.js"></script>
+        <script src="owl/owl.carousel.js"></script>
 <script>
-   const navIcon = document.querySelectorAll(".menu a");
-   const navIconActive = document.getElementsByClassName("active");
-   const navText = document.querySelectorAll(".menu a span");
-   for(x=0;x<navIcon.length;x++){
-     navIcon[x].addEventListener('mouseover', (event) =>{
-        document.querySelector('.menu a:hover span').style.visibility = "visible";
-        document.querySelector('.menu a:hover span').style.opacity = "100%";
-        });
-     navIcon[x].addEventListener('mouseout', (event) =>{
-        for(y=0;y<navText.length;y++){
-            navText[y].style.visibility = "hidden";
-            navText[y].style.opacity = "0";
+   $(()=>{
+    $(window).scroll(()=>{
+        const scrollVal = $(window).scrollTop();            
+        if(scrollVal >= 0){        
+            $('section').each((i, element)=>{            
+                if($(element).position().top <= scrollVal +500){
+                    $('.menu a.active').removeClass('active');
+                    $('.menu a').eq(i).addClass('active');
+                }
+            })
         }
-     });
-     navIcon[x].addEventListener('click', (event)=>{
-        navIconActive[0].removeAttribute('class');
-        event.target.setAttribute('class', 'active');
-     });
-    }
-    
-</script>    
-<script>
-            $(document).ready(function() {
-              var owl = $('.owl-carousel');
+    });
+    $(document).ready(()=>{
+        $(".menu a").on('mouseover', ()=>{
+            $('.menu a:hover span').css('visibility', 'visible');
+            $('.menu a:hover span').css('opacity', '100%');
+        });
+        $(".menu a").on('mouseout', ()=>{
+            $('.menu a span').css('visibility', 'hidden');
+            $('.menu a span').css('opacity', '0');
+        });
+    });
+    $(document).ready(()=>{
+              const owl = $('.owl-carousel');
               owl.owlCarousel({
                 margin: 10,
                 nav: true,
@@ -310,6 +310,10 @@
                 }
               })
             })
+});
+</script>    
+<script>
+            
           </script>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
