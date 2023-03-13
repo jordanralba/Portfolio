@@ -1,97 +1,317 @@
 <!doctype html>
-<html>
-    <head>
-        <meta name='viewport' content='width=device-width, initial-scale=1.0'>            
-        <title>Portfolio</title>
-        <link rel='stylesheet' href='/public/css/style.css'>
-          <script src="https://aframe.io/releases/1.4.0/aframe.js"></script>
-
-    </head>
-    <body>
-            <div class="header row">
-
-                    <div class="col-1"><a href="#"><i class="material-icons">home</i></a></div>
-                    <div class="col-1"><a href="#"><i class="material-icons">library_books</i></a></div>
-                    <div class="col-1"><a href="#"><i class="material-icons">school</i></a></div>
-                    <div class="col-1"><a href="#" target="_blank"><i class="material-icons">language</i></a></div>
-                    <!--  <div class="col-2"></div>
-                    <div class="col-2"></div>
-                    <div class="col-2"></div>
-                    <div class="col-2"></div>
-                    <div class="col-2"></div>
-                    <div class="col-2"></div>
-                    <div class="col-2"></div>
-                    <div class="col-3"></div>-->
-            </div>
-        </div>
-        <div class="introduction row">
-            <h1>Jordan Alba Reed</h1>
-            <p>I am a student of Boise State University’s <a href="https://www.boisestate.edu/gimm/" target="blank">GIMM</a> program where I focus on programming of different software applications. This is a gallery designed to showcase some works that capture my capabilities as a software engineer. My goals are to become a competent member of a strong team to help develop a product that fully meets the client's need.</p>
-
- 
-            <a href="mailto: albareedjordan@gmail.com">Contact Me</a>
-        </div>
-        <hr />
-       <div class="content">
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Jordan Alba Reed's Portfolio</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <link rel="stylesheet" href="owl.carousel.css">
+    <link rel="stylesheet" href="owl.theme.default.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined">
+    <script src="https://kit.fontawesome.com/84501ef9f1.js" crossorigin="anonymous"></script>
+    
+    <link rel="stylesheet" href="newStyle.css">
+</head>
+  <body>
+    <video class="body-overlay" autoplay loop muted src="media/main-background.mp4"></video>
+    <div class="contact-card" >
         <div class="row">
-        <!-- add hidden contentcards (to left or right) that further display info like short synopsis and button to its main page -->
-            <div class="col-6 contentBlock contentCard" >
-                <h1>Spider Animation</h1>
-                <video id="spiderAnim" alt="Animation Project" referrerpolicy="origin" src="public/media/spiderAnim.mov">
-                </video>
-            </div>
-            <div class="col-6" >
-                <img src="" alt="Project 2">
-            </div>
-        </div>
-        <hr />
-        <div class="row">
-            <div class="col-6 contentBlock contentCard" >
-                <h1>360&deg; Escape Room Narrative Experience</h1>
-                <img id="incMach" alt="Incredible Machine Cover Photo" src="/public/media/imSplash.png" />
-            </div>
-            <div class="col-6 contentBlock contentCard" >
-                <div style="padding:42.86% 0 0 0;position:relative;"><iframe src="https://player.vimeo.com/video/797176911?h=49286fa964&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479" frameborder="0" allow="autoplay; fullscreen; picture-in-picture; gyroscope; accelerometer" allowfullscreen style="position:absolute;top:0;left:0;width:100%;height:100%;" title="FirstScene"></iframe></div><script src="https://player.vimeo.com/api/player.js"></script>       
-            </div>
-        </div>
-        <hr />
-        <div class="row">
+            <div class="col-lg-12"><h3>Jordan: <span>Designer & Developer</span></h3></div>
             
-            <div class="col-6" >
-                <img src="" alt="Project 2">
-            </div>
         </div>
-        <hr />
-        <div class="row">
-            <div class="col-6" >
-                <img src="/public/media/MattHarvey.png" alt="Project 1">
-            </div>
-            <div class="col-6">
-                <img src="" alt="Project 2">
-            </div>
-        </div>
-        <div class="finalSpacer"></div>
-       </div>
-        
-                <div class="footer row">
-                    <div class="col-1"><a href="#"><i class="material-icons">arrow_upward</i></a></div>
-                    <div class="col-1"><a href="#"><i class="material-icons">home</i></a></div>
-                    <div class="col-1"><a href="#"><i class="material-icons">library_books</i></a></div>
-                    <div class="col-1"><a href="#"><i class="material-icons">school</i></a></div>
-                    <div class="col-1"><a href="#" target="_blank"><i class="material-icons">language</i></a></div>
-                    <!--  <div class="col-2"></div>
-                    <div class="col-2"></div>
-                    <div class="col-2"></div>
-                    <div class="col-2"></div>
-                    <div class="col-2"></div>
-                    <div class="col-2"></div>
-                    <div class="col-2"></div>
-                    <div class="col-3"></div>-->
+            <img class="img-fluid" src="media/headShot.png">
+            <div class="row">
+                <div class="col-3">
+                    <a href="tel:+1 208 509 9812"><i class="material-symbols-outlined">phone</i></a>
+                </div><div class="col-3">
+                    <a href="mailto:albareedjordan@gmail.com"><i class="material-symbols-outlined">email</i></a>
+                </div><div class="col-3">
+                    <a href="https://github.com/jordanralba"><i class="fa-brands fa-github" ></i></a>
+                </div><div class="col-3">
+                    <a href="https://www.linkedin.com/in/jordan-alba-reed/"><i class="fa-brands fa-linkedin" ></i></a>
                 </div>
+            </div>
+    </div>
+    <ul class="menu scroll-nav d-flex">
+        <li>
+        <a class="active" href="#home">
+        <span>Home</span> <i class="material-symbols-outlined">home</i>
+        </a>
+        </li>
+        <li>
+        <a class="" href="#resume">
+        <span>Resume</span> <i class="material-symbols-outlined">contact_mail</i>
+        </a>
+        </li>
+        <li>
+        <a class="" href="#services">
+        <span>Services</span> <i class="material-symbols-outlined">list_alt</i>
+        </a>
+        </li>
+        <li>
+        <a class="" href="#skills">
+        <span>Skills</span> <i class="material-symbols-outlined">checklist</i>
+        </a>
+        </li>
+        <li>
+        <a class="" href="#artifacts">
+        <span>Artifacts</span> <i class="material-symbols-outlined">dashboard</i>
+        </a>
+        </li>
+    </ul>
+    <main class="container-fluid" >
         
+        <div class="row">
+        <div class="col-lg-4">&nbsp;</div>
+        <div class="col-lg-7">
+            <section id="home">
+                <div class="row">
+                    <div class="col-lg-12">
+                    <h4 class="section-title"> <i class="material-symbols-outlined">home</i> Introduction</h4>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-lg-12">
+                        <h1>Jordan Alba Reed, <span>Programmer & Designer</span></h1>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-lg-9">
+                        <p>I am a student of Boise State University’s 
+                            <a href="https://www.boisestate.edu/gimm/"> GIMM</a> 
+                            program where I focus on programming of different software applications. This is a gallery designed to showcase some works that capture my capabilities as a software engineer. My goals are to become a competent member of a strong team to help develop a product that fully meets the client's need.
+                        </p>
+                    </div>
+                </div>
+            </section>
+            <section id="resume">
+                <div class="row">
+                    <div class="col-lg-12">
+                    <h4 class="section-title"> <i class="material-symbols-outlined">contact_mail</i> Resume</h4>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-lg-12">
+                        <h1>Background <span>Experience & Education</span></h1>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-lg-9">
+                        <ul>
+                            <li><h2>Lorem Ipsum</h2>
+                            <ul><li>dorem</li><li>dorem</li></ul></li>
+                            <li><h2>Ipsum Lorem</h2>
+                            <ul><li>dorem</li><li>dorem</li></ul></li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+            <section id="services">
+                <div class="row">
+                    <div class="col-lg-12">
+                    <h4 class="section-title"><i class="material-symbols-outlined">list_alt</i> Services</h4>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-lg-12">
+                        <h1>Areas of <span>Expertise</span></h1>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-lg-10 specialization-card">
+                        <div class="row">
+                            <div class="col-lg-9"><h2>Full-Stack Web Development</h2></div>
+                            <div class="col-lg-3"><h2><i class="material-symbols-outlined">code format_paint</i></h2></div>
+                        </div>
+                        <p>Ground up development of web servers, apps, UX, database storage.
+                            </br>&nbsp;
+                            </br>&nbsp;
+                            </br>&nbsp;<span>Extremely Comfortable</span>
+                        </p>
 
-        <script src="/public/autoplay.js"></script>
-        <script src="/public/header.js"></script>
-    </body>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-lg-10 specialization-card">
+                        <div class="row">
+                            <div class="col-lg-9"><h2>Video Game Development</h2></div>
+                            <div class="col-lg-3"><h2><i class="material-symbols-outlined">code</i></h2></div>
+                        </div>
+                        <p>I use Unity to construct 2D, 3D and XR games.
+                            </br>&nbsp;
+                            </br>&nbsp;
+                            </br>&nbsp;<span>Comfortable</span>
+                        </p>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-lg-10 specialization-card">
+                        <div class="row">
+                            <div class="col-lg-9"><h2>Animation & Modeling</h2></div>
+                            <div class="col-lg-3"><h2><i class="material-symbols-outlined">format_paint</i></h2></div>
+                        </div>
+                        <p>Using an array of different services, I am able to create 2D and 3D animations
+                            </br>&nbsp;
+                            </br>&nbsp;
+                            </br>&nbsp;<span>Comfortable</span>
+                        </p>
 
+                    </div>
+                    <div class="col-lg-10 specialization-card">
+                        <div class="row">
+                            <div class="col-lg-9"><h2>Arduino Programming</h2></div>
+                            <div class="col-lg-3"><h2><i class="material-symbols-outlined">code</i></h2></div>
+                        </div>
+                        <p>Design and prototype physical interactivity, bridging the gap between software and hardware.
+                            </br>&nbsp;
+                            </br>&nbsp;
+                            </br>&nbsp;<span>Comfortable</span>
+                        </p>
+
+                    </div>
+                </div>
+            </section> 
+            <section id="skills">
+                <div class="row">
+                    <div class="col-lg-12">
+                    <h4 class="section-title"><i class="material-symbols-outlined">checklist</i> Skills</h4>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-lg-12">
+                        <h1>My <span>Skills</span></h1>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-lg-12">
+                      <div class="owl-carousel owl-theme">
+                        <div class="skill-card">
+                          <img class="mx-auto d-block" src="media/nodejs.png">
+                          <h2>NodeJS</h2>
+                          <p>Client/Server Communication</p>
+                        </div>
+                        <div class="skill-card">
+                          <img class="mx-auto d-block" src="media/bootstrap.png">
+                          <h2>Bootstrap</h2>
+                          <p>Responsive Design</p>
+                        </div>
+                        <div class="skill-card">
+                          <img class="mx-auto d-block" src="media/mysql.png">
+                          <h2>MySQL</h2>
+                          <p>Database Design & Queries</p>
+                        </div>
+                        <div class="skill-card">
+                          <img class="mx-auto d-block" src="media/d3js.png">
+                          <h2>D3</h2>
+                          <p>Dynamic Data Visualizations</p>
+                        </div>
+                        <div class="skill-card">
+                          <img class="mx-auto d-block" src="media/git.png">
+                          <h2>Git</h2>
+                          <p>Repositories & Version Control</p>
+                        </div>
+                        <div class="skill-card">
+                          <img class="mx-auto d-block" src="media/unity-light.png">
+                          <h2>Unity</h2>
+                          <p>2/3D & XR Game Development</p>
+                        </div>
+                        <div class="skill-card">
+                          <img class="mx-auto d-block" src="media/blender.png">
+                          <h2>Blender</h2>
+                          <p>3D Modeling & Animation</p>
+                        </div>
+                        <div class="skill-card">
+                          <img class="mx-auto d-block" src="media/arduino.png">
+                          <h2>Arduino</h2>
+                          <p>Physical Computation</p>
+                        </div>
+                        <div class="skill-card">
+                          <img class="mx-auto d-block" src="media/creative-cloud.png">
+                          <h2>Creative Cloud</h2>
+                          <p>Media Creation & Editing</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+            </section>
+            <section id="artifacts">
+                <div class="row">
+                    <div class="col-lg-12">
+                    <h4 class="section-title"><i class="material-symbols-outlined">dashboard</i> Artifacts</h4>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-lg-12">
+                        <h1>Featured <span>Projects & Examples</span></h1>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-lg-5">
+                        <a href="projects.html"><img class="img-fluid" src="media/imSplash.png"></a>
+                    </div>
+                    <div class="col-lg-1">&nbsp;</div>
+                    <div class="col-lg-5">
+                        <a href="projects.html"><img class="img-fluid" src="media/spiderSplash.png"></a>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-lg-12">
+                        <iframe src="https://airodigital-customerportal.herokuapp.com" frameborder="0"></iframe>                    
+                    </div>
+                </div>
+            </section>
+        </div>
+    </div>
+    </main>
+    <script src="https://code.jquery.com/jquery-3.6.4.js" integrity="sha256-a9jBBRygX1Bh5lt8GZjXDzyOB+bWve9EiO7tROUtj/E=" crossorigin="anonymous"></script>
+        <script src="owl.carousel.js"></script>
+<script>
+   const navIcon = document.querySelectorAll(".menu a");
+   const navIconActive = document.getElementsByClassName("active");
+   const navText = document.querySelectorAll(".menu a span");
+   for(x=0;x<navIcon.length;x++){
+     navIcon[x].addEventListener('mouseover', (event) =>{
+        document.querySelector('.menu a:hover span').style.visibility = "visible";
+        document.querySelector('.menu a:hover span').style.opacity = "100%";
+        });
+     navIcon[x].addEventListener('mouseout', (event) =>{
+        for(y=0;y<navText.length;y++){
+            navText[y].style.visibility = "hidden";
+            navText[y].style.opacity = "0";
+        }
+     });
+     navIcon[x].addEventListener('click', (event)=>{
+        navIconActive[0].removeAttribute('class');
+        event.target.setAttribute('class', 'active');
+     });
+    }
+    
+</script>    
+<script>
+            $(document).ready(function() {
+              var owl = $('.owl-carousel');
+              owl.owlCarousel({
+                margin: 10,
+                nav: true,
+                dots: false,
+                autoplay: false,
+                loop: true,
+                responsive: {
+                  0: {
+                    items: 1
+                  },
+                  992: {
+                    items: 3
+                  },
+                  1500: {
+                    items: 5
+                  }
+                }
+              })
+            })
+          </script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+  </body>
 </html>
