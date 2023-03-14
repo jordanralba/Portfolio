@@ -4,12 +4,23 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Jordan Alba Reed's Portfolio</title>
+    <link rel="preconnect" href="https://cdn.jsdelivr.net/" crossorigin>
+    <link rel="dns-prefetch" href="https://cdn.jsdelivr.net/" crossorigin>
+    <link rel="preconnect" href="https://kit.fontawesome.com/" crossorigin>
+    <link rel="dns-prefetch" href="https://kit.fontawesome.com/" crossorigin>
+    <link rel="preconnect" href="https://ka-f.fontawesome.com/"crossorigin>
+    <link rel="dns-prefetch" href="https://ka-f.fontawesome.com/"crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="dns-prefetch" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="dns-prefetch" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://code.jquery.com/" crossorigin>
+    <link rel="dns-prefetch" href="https://code.jquery.com/" crossorigin>
+
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
-    <link rel="stylesheet" href="owl/owl.carousel.css">
-    <link rel="stylesheet" href="owl/owl.theme.default.min.css">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined">
-    <script src="https://kit.fontawesome.com/84501ef9f1.js" crossorigin="anonymous"></script>
-    
+    <link rel="stylesheet" href="js/owl/owl.carousel.css">
+    <link rel="stylesheet" href="js/owl/owl.theme.default.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined">    
     <link rel="stylesheet" href="style.css">
 </head>
   <body>
@@ -264,58 +275,10 @@
         </div>
     </div>
     </main>
-    <script src="https://code.jquery.com/jquery-3.6.4.js" integrity="sha256-a9jBBRygX1Bh5lt8GZjXDzyOB+bWve9EiO7tROUtj/E=" crossorigin="anonymous"></script>
-        <script src="owl/owl.carousel.js"></script>
-<script>
-   $(()=>{
-    $(window).scroll(()=>{
-        const scrollVal = $(window).scrollTop();            
-        if(scrollVal >= 0){        
-            $('section').each((i, element)=>{            
-                if($(element).position().top <= scrollVal +500){
-                    $('.menu a.active').removeClass('active');
-                    $('.menu a').eq(i).addClass('active');
-                }
-            })
-        }
-    });
-    $(document).ready(()=>{
-        $(".menu a").on('mouseover', ()=>{
-            $('.menu a:hover span').css('visibility', 'visible');
-            $('.menu a:hover span').css('opacity', '100%');
-        });
-        $(".menu a").on('mouseout', ()=>{
-            $('.menu a span').css('visibility', 'hidden');
-            $('.menu a span').css('opacity', '0');
-        });
-    });
-    $(document).ready(()=>{
-              const owl = $('.owl-carousel');
-              owl.owlCarousel({
-                margin: 10,
-                nav: true,
-                dots: false,
-                autoplay: false,
-                loop: true,
-                responsive: {
-                  0: {
-                    items: 1
-                  },
-                  992: {
-                    items: 3
-                  },
-                  1500: {
-                    items: 5
-                  }
-                }
-              })
-            })
-});
-</script>    
-<script>
-            
-          </script>
-
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
-  </body>
+</body>
+<script src="https://code.jquery.com/jquery-3.6.4.js" integrity="sha256-a9jBBRygX1Bh5lt8GZjXDzyOB+bWve9EiO7tROUtj/E=" crossorigin="anonymous"></script>
+<script src="js/owl/owl.carousel.js"></script>
+<script src="js/main.js"></script>    
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+<script src="https://kit.fontawesome.com/84501ef9f1.js" crossorigin="anonymous"></script>
 </html>
