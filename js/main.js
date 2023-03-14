@@ -23,6 +23,7 @@ $(()=>{
     $(document).ready(()=>{
               const owl = $('.owl-carousel');
               owl.owlCarousel({
+                lazyLoad: true,
                 margin: 10,
                 nav: true,
                 dots: false,
