@@ -194,3 +194,10 @@ ul.menu{
         right: 68px;        
     }
 }
+small{
+    font-size: .85em;
+}
+video{
+    max-width: 100%;
+    height: 100%;
+}
