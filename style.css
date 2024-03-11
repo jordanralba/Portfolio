@@ -2,7 +2,7 @@
 body{
     background-color: #000;
     color: #fff;
-    margin: 0 5%;
+    margin: 0 48px 0 16px;
 }
 a{
     color: #4682B4;
@@ -156,7 +156,7 @@ span{
     border: 1px solid #575757;
     border-radius: 30px;
     position: fixed;
-    right: 5px;
+    right: 4px;
     top: 33%;
     text-align: center;
     padding: 24px 5px;
